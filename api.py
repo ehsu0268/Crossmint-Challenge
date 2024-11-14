@@ -25,10 +25,12 @@ class APIHelper(object):
     def generate_get_request(cls):
         """
         Generates the get request to retrieve the value for each cell in the goal matrix
-        :return:
+        :return: Response
         """
         try:
-            return requests.get(BASE_URL + "map/" + CANDIDATE_ID + "/goal", headers=cls.headers).json()
+            return requests.get(
+                BASE_URL + "map/" + CANDIDATE_ID + "/goal", headers=cls.headers
+            ).json()
         except requests.exceptions.HTTPError as err:
             raise SystemError(err)
 

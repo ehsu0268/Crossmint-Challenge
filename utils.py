@@ -7,7 +7,7 @@ ATTRIBUTE_ASTRAL_OBJECT = {
     "BLUE_SOLOON": ["blue", "soloon"],
     "RED_SOLOON": ["red", "soloon"],
     "PURPLE_SOLOON": ["purple", "soloon"],
-    "WHITE_SOLOON": ["white", "soloon"]
+    "WHITE_SOLOON": ["white", "soloon"],
 }
 
 
@@ -17,6 +17,6 @@ class MatrixUtils:
         """
         Gets attribute and type of astral object in a processed list
         :param input: input (e.g. WHITE_SOLOON)
-        :return: []
+        :return: [attribute, astral_object] or None
         """
         return ATTRIBUTE_ASTRAL_OBJECT.get(input, None)
